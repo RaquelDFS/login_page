@@ -3,7 +3,11 @@
 	margin: 0;
 	padding: 0;
 }
-
+:root{
+    --main-color:#EC557C;
+    --main-bg-color: rgba(11, 20, 28, 0.8);
+    --not-selected: rgba(255, 255, 255, 0.4);
+}
 	body{
     font-family: 'poppins',sans-serif;
     color: white;
@@ -26,4 +30,127 @@
         height: 600px;
         width: 500px;
         margin: auto;
+}
+
+    .main_label{
+        margin-bottom: 20px;
+}
+    .main_input{
+        margin-top: 10px;
+        background-color: transparent;
+        border:transparent;
+        border-bottom: solid 1px #fff;
+        width: 280px;
+        font-family: inherit;
+        color: #fff;
+        outline: 0;
+}
+    .main_input:focus {
+        background-color: transparent;
+}
+    .main_input:active{
+        background-color: transparent;
+}
+
+    .div_label{
+        margin: 50px;
+}
+
+.nav_tabs{
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.tab_label{
+    display: block;
+    width: 100px;
+    background-color: none;
+    padding: 25px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 18px;
+    line-height: 117%;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.nav_tabs .rd_tab { 
+display:none;
+position: absolute;
+}
+
+.nav_tabs .rd_tab:checked ~ label { 
+border-bottom: 3px solid var(--main-color);
+color:#fff;}
+
+.tab-content{
+display: none;
+position: absolute;
+height: 320px;
+width: 600px;
+left: 0;
+}
+
+.rd_tab:checked ~ .tab-content{
+display: block;
+}
+
+.tab-content{
+padding-top: 150px;
+width: 500px;
+
+}
+
+.tab-content.register{
+padding-top: 2px;
+}
+
+.fp{
+    display: flex;
+    justify-content: center;
+}
+.forgot-password{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+.forgot-password:hover{
+    color: var(--main-color);
+}
+
+.box_button{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main_button{
+    box-sizing: border-box;
+    border:none;
+    border-radius: 3px;
+    padding: 15px 200px;
+    font-family:'poppins', sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 18px;
+    line-height: 117%;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.main_button:hover{
+    background-color: rgb(245, 19, 94);
+    cursor: pointer;
 }
