@@ -1,27 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-}
-
-	body{
-    font-family: 'poppins',sans-serif;
-    color: white;
-    background-image: url(/assets/bg/bg-img.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-	
 	
 	.nav_tabs{
 		width: 600px;
 		height: 400px;
 		margin: 100px auto;
-		background-color: #fff;
+        padding: 25px;
+        background-color: var(--main-bg-color);
 		position: relative;
 	}
 
@@ -36,9 +19,12 @@
 	.tab_label{
 		display: block;
 		width: 100px;
-		background-color: #363b48;
+		background-color: none;
 		padding: 25px;
-		font-size: 20px;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        font-size: 18px;
+        line-height: 117%;
 		color:#fff;
 		cursor: pointer;
 		text-align: center;
@@ -51,17 +37,15 @@
 }
 
 .nav_tabs .rd_tab:checked ~ label { 
-	background-color: #e54e43;
+	border-bottom: 3px solid var(--main-color);
 	color:#fff;}
 
 .tab-content{
-	border-top: solid 5px #e54e43;
-	background-color: #fff;
 	display: none;
 	position: absolute;
 	height: 320px;
 	width: 600px;
-	left: 0;	
+	left: 0;
 }
 
 .rd_tab:checked ~ .tab-content{
