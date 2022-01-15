@@ -1,10 +1,5 @@
 	
 	.nav_tabs{
-		width: 600px;
-		height: 400px;
-		margin: 100px auto;
-        padding: 25px;
-        background-color: var(--main-bg-color);
 		position: relative;
 	}
 
@@ -51,11 +46,13 @@
 .rd_tab:checked ~ .tab-content{
 	display: block;
 }
-.tab-content h2{
-	padding: 10px;
-	color: #87d3b7;
+
+.tab-content{
+	padding-top: 150px;
+	width: 500px;
+
 }
-.tab-content article{
-	padding: 10px;
-	color: #555;
+
+.tab-content.register{
+padding-top: 2px;
 }

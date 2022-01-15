@@ -1,0 +1,27 @@
+.box_button{
+    display: flex;
+    justify-content: center;
+}
+
+
+.main_button{
+    box-sizing: border-box;
+    border:none;
+    border-radius: 3px;
+    padding: 15px 200px;
+    font-family:'poppins', sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 18px;
+    line-height: 117%;
+    color:#fff;
+    cursor: pointer;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+.main_button:hover{
+    background-color: rgb(245, 19, 94);
+    cursor: pointer;
+}
